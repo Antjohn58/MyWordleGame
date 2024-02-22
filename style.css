@@ -1,0 +1,53 @@
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+header { 
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#game{
+    display: grid;
+    place-items: center;
+    height: 70vh;
+}
+
+#wordle-grid{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px;
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--secondary-color);
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+}
+
+.letter.correct {
+    background-color: var(--correct-color);
+    color: var(--primary-color);
+}   
+
+.letter.wrong {
+    background-color: var(--wrong-color);
+    color: var(--primary-color);
+}
+
+.letter.misplaced {
+    background-color: var(--misplaced-color);
+    color: var(--secondary-color);
+}
